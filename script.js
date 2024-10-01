@@ -14,8 +14,18 @@ let result = '';
 // FUNÇÃO IMPRIMIR VALOR EM SCREEN
 function addScreen(p) {
 
-    inScreen += p;
-    comando.innerHTML = inScreen;
+    if (isNaN(p) && result != '') {
+
+        inScreen = result;
+        inScreen += p;
+        result = '';
+        comando.innerHTML = inScreen;
+
+    } else {
+
+        inScreen += p;
+        comando.innerHTML = inScreen;
+    }
 }
 
 
@@ -64,7 +74,7 @@ function resultado() {
         parenteses = '';
         comando.innerHTML = inScreen;
     }
-    
+
     result = Number.parseFloat(eval(inScreen));
     comando.innerHTML = result;
     inScreen = '';
