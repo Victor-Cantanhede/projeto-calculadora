@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!--CONTAINER-->
+    <main class="container">
+
+        <!--CONTAINER-SCREEN-->
+        <section class="container-screen">
+
+            <!--SCREEN-->
+            <div class="screen" id="iprint">
+                
+            </div>
+        </section>
+
+        <!--CONTAINER-KEYBOARD-->
+        <section class="container-keyboard">
+
+            <!--KEYBOARD-->
+            <div class="keyboard">
+
+                <!--ROW001-->
+                <div class="rows">
+
+                    <!--BUTTONS-->
+                    <button class="buttons" id="limpar" onclick="limparTudo()">C</button>
+                    <button class="buttons" onclick="apagar()">&lt;</button>
+                    <button class="buttons" id="comandos" onclick="addParenteses()">( )</button>
+                    <button class="buttons" id="comandos" onclick="addScreen('/')">/</button>
+                </div>
+
+                <!--ROW002-->
+                <div class="rows">
+                    
+                    <!--BUTTONS-->
+                    <button class="buttons" onclick="addScreen(7)">7</button>
+                    <button class="buttons" onclick="addScreen(8)">8</button>
+                    <button class="buttons" onclick="addScreen(9)">9</button>
+                    <button class="buttons" id="comandos" onclick="addScreen('*')">*</button>
+                </div>
+
+                <!--ROW003-->
+                <div class="rows">
+                    
+                    <!--BUTTONS-->
+                    <button class="buttons" onclick="addScreen(4)">4</button>
+                    <button class="buttons" onclick="addScreen(5)">5</button>
+                    <button class="buttons" onclick="addScreen(6)">6</button>
+                    <button class="buttons" id="comandos" onclick="addScreen('-')">-</button>
+                </div>
+
+                <!--ROW004-->
+                <div class="rows">
+                    
+                    <!--BUTTONS-->
+                    <button class="buttons" onclick="addScreen(1)">1</button>
+                    <button class="buttons" onclick="addScreen(2)">2</button>
+                    <button class="buttons" onclick="addScreen(3)">3</button>
+                    <button class="buttons" id="comandos" onclick="addScreen('+')">+</button>
+                </div>
+
+                <!--ROW005-->
+                <div class="rows">
+                    
+                    <!--BUTTONS-->
+                    <button class="buttons" id="comandos" onclick="porcento()">%</button>
+                    <button class="buttons" onclick="addScreen(0)">0</button>
+                    <button class="buttons" onclick="addScreen('.')">,</button>
+                    <button class="buttons" id="calc" onclick="resultado()">=</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
