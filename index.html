@@ -11,6 +11,8 @@
     <!--CONTAINER-->
     <main class="container">
 
+        <!--TÍTULO-->
+        <h1>Calculadora</h1>
         <!--CONTAINER-SCREEN-->
         <section class="container-screen">
 
@@ -32,7 +34,7 @@
                     <!--BUTTONS-->
                     <button class="buttons" id="limpar" onclick="limparTudo()">C</button>
                     <button class="buttons" onclick="apagar()">&lt;</button>
-                    <button class="buttons" id="comandos" onclick="addParenteses()">( )</button>
+                    <button class="buttons" id="comandos" onclick="porcento()">%</button>
                     <button class="buttons" id="comandos" onclick="addScreen('/')">/</button>
                 </div>
 
@@ -70,7 +72,7 @@
                 <div class="rows">
                     
                     <!--BUTTONS-->
-                    <button class="buttons" id="comandos" onclick="porcento()">%</button>
+                    <button class="buttons" id="comandos" onclick="addParenteses()">( )</button>
                     <button class="buttons" onclick="addScreen(0)">0</button>
                     <button class="buttons" onclick="addScreen('.')">,</button>
                     <button class="buttons" id="calc" onclick="resultado()">=</button>

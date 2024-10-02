@@ -24,6 +24,7 @@ function addScreen(p) {
     } else {
 
         inScreen += p;
+        result = '';
         comando.innerHTML = inScreen;
     }
 }
@@ -92,6 +93,8 @@ function limparTudo() {
 
 // FUNÇÃO APAGAR ÚLTIMO CARACTER
 function apagar() {
+
+
 
     inScreen = inScreen.slice(0, -1);
     comando.innerHTML = inScreen;
